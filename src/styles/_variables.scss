@@ -1,0 +1,18 @@
+$cellWidth: 100px;
+$cellIndent: 1px;
+$fontSize: 30px;
+
+$firstDayMargin:
+  "mon" 0,
+  "tue" 101px,
+  "wed" 202px,
+  "thu" 303px,
+  "fri" 404px,
+  "sat" 505px,
+  "sun" 606px;
+
+$daysInMonth:
+  "28" 28,
+  "29" 29,
+  "30" 30,
+  "31" 31;
