@@ -8,16 +8,19 @@ body {
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 .calendar {
   display: flex;
   flex-wrap: wrap;
   width: 707px;
+  margin: 0 auto;
   justify-content: flex-start;
   font-size: $fontSize;
 
   div {
-    position: relative;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,12 +31,11 @@ body {
     margin-bottom: $cellIndent;
     background-color: #eee;
     border: 1px solid black;
-    transition-property: top, background-color;
-    transition-duration: 0.5s;
+    transition: margin-top 0.5s, background-color 0.5s;
+    cursor: pointer;
 
-    &:hover{
-      top: -20px;
-      cursor: pointer;
+    &:hover {
+      margin-top: -20px;
       background-color: #ffbfcb;
     }
   }
@@ -57,7 +59,4 @@ body {
       }
     }
   }
-
 }
-
-
